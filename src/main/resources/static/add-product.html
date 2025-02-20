@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="add-product-container">
+    <h2>Add New Product</h2>
+    <form id="add-product-form" class="add-product-form">
+        <label class="add-product-label" for="product-name">Product Name:</label>
+        <input type="text" id="product-name" class="add-product-input" required>
+
+        <label class="add-product-label" for="product-desc">Description:</label>
+        <textarea id="product-desc" class="add-product-textarea" required></textarea>
+
+        <label class="add-product-label" for="product-brand">Brand:</label>
+        <input type="text" id="product-brand" class="add-product-input" required>
+
+        <label class="add-product-label" for="product-category">Category:</label>
+        <input type="text" id="product-category" class="add-product-input" required>
+
+        <label class="add-product-label" for="product-price">Price:</label>
+        <input type="number" id="product-price" class="add-product-input" required>
+
+        <label class="add-product-label" for="product-quantity">Quantity:</label>
+        <input type="number" id="product-quantity" class="add-product-input" required>
+
+        <label class="add-product-label" for="product-available">Available:</label>
+        <select id="product-available" class="add-product-select">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="submit" class="add-product-button">Add Product</button>
+    </form>
+    <button onclick="navigateToHome()" class="back-to-home-button">Back to Home</button>
+</div>
+</body>
+</html>

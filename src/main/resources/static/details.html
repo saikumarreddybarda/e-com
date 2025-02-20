@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="details.js"></script>
+</head>
+<body>
+
+<!-- Menu Bar -->
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="add-product.html">Add Product</a>
+        <a href="#">Categories</a>
+    </div>
+    <div class="nav-right">
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+</nav>
+
+<!-- Product Details -->
+<div id="product-details" class="product-container"></div>
+
+<!-- Update Product Form (Hidden Initially) -->
+<div id="update-form-container" class="modal hidden">
+    <div class="modal-content">
+        <h2>Update Product</h2>
+        <form id="update-product-form">
+            <input type="text" id="update-name" placeholder="Product Name" required>
+            <input type="text" id="update-brand" placeholder="Brand" required>
+            <input type="text" id="update-category" placeholder="Category" required>
+            <input type="text" id="update-description" placeholder="Description" required>
+            <input type="number" id="update-price" placeholder="Price" required>
+            <input type="number" id="update-quantity" placeholder="Quantity" required>
+            <select id="update-available">
+                <option value="true">Available</option>
+                <option value="false">Not Available</option>
+            </select>
+            <button type="submit">Update Product</button>
+            <button type="button" id="cancel-update">Cancel</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
