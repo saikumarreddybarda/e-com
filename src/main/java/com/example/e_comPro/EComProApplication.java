@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.Around;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication //spring boot app
+@SpringBootApplication
 public class EComProApplication {
 
 	public static void main(String[] args) {
